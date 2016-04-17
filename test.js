@@ -1,6 +1,12 @@
 import test from 'ava'
 import cris from './src/index'
 
+test('name', t => {
+  const name = cris('cool', {name: 'cool'}).string().max(1)
+  t.true(name.error[0].indexOf('shorter') !== -1)
+  t.is(name.name, 'cool')
+})
+
 test('lowercase uppercase', t => {
   const lowercase = cris('iPhone').lowercase()
   const uppercase = cris('iPhone').uppercase()

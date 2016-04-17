@@ -1,5 +1,10 @@
 export default class Cris {
-  constructor(value) {
+  constructor(value, {
+    name
+  } = {}) {
+    if (name) {
+      this.name = name
+    }
     this.value = value
   }
   string() {
