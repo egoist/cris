@@ -42,3 +42,9 @@ test('number', t => {
   const number = cris('123').number()
   t.true(number.error[0].indexOf('Expected to be number') !== -1)
 })
+
+test('email', t => {
+  const email = cris(123).string().email()
+  t.is(email.error.length, 2)
+  t.true(email.error[1].indexOf('valid email') !== -1)
+})

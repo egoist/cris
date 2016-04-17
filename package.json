@@ -41,5 +41,8 @@
     "require": [
       "babel-register"
     ]
+  },
+  "dependencies": {
+    "is-email": "^0.1.1"
   }
 }

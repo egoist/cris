@@ -1,3 +1,5 @@
+const isEmail = require('is-email')
+
 export default class Cris {
   constructor(value, {
     name
@@ -58,6 +60,12 @@ export default class Cris {
   uppercase() {
     if (typeof this.value === 'string' && this.value.toUpperCase() !== this.value) {
       this.error = pushError(this.error, 'Expected to be uppercased string')
+    }
+    return this
+  }
+  email() {
+    if (!isEmail(this.value)) {
+      this.error = pushError(this.error, 'Exptected to be a valid email address')
     }
     return this
   }
