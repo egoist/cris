@@ -52,7 +52,7 @@ export default class Cris {
   }
   uppercase() {
     if (typeof this.value === 'string' && this.value.toUpperCase() !== this.value) {
-      this.error = pushError(this.error, 'Expected to be lowercased string')
+      this.error = pushError(this.error, 'Expected to be uppercased string')
     }
     return this
   }
