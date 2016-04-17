@@ -1,4 +1,4 @@
-# cris [![NPM version](https://img.shields.io/npm/v/cris.svg)](https://npmjs.com/package/cris) [![NPM downloads](https://img.shields.io/npm/dm/cris.svg)](https://npmjs.com/package/cris) [![Build Status](https://img.shields.io/circleci/project/egoist/cris/master.svg)](https://circleci.com/gh/egoist/cris) [![Coveralls branch](https://img.shields.io/coveralls/egoist/cris/master.svg?maxAge=2592000)](https://github.com/egoist/cris)
+# cris [![NPM version](https://img.shields.io/npm/v/cris.svg)](https://npmjs.com/package/cris) [![NPM downloads](https://img.shields.io/npm/dm/cris.svg)](https://npmjs.com/package/cris) [![Build Status](https://img.shields.io/circleci/project/egoist/cris/master.svg)](https://circleci.com/gh/egoist/cris) [![Coveralls branch](https://img.shields.io/coveralls/egoist/cris/master.svg)](https://github.com/egoist/cris)
 
 > JavaScript data validation library.
 
