@@ -9,7 +9,7 @@ test:
     - nvm use 5 && npm test
 
 deployment:
-  production:
-    branch: production
+  staging:
+    branch: master
     commands:
       - './node_modules/.bin/nyc report --reporter=text-lcov | ./node_modules/.bin/coveralls'
