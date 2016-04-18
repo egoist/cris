@@ -48,3 +48,8 @@ test('email', t => {
   t.is(email.error.length, 2)
   t.true(email.error[1].indexOf('valid email') !== -1)
 })
+
+test('regex', t => {
+  const regex = cris('wow').regex(/^\.wow$/)
+  t.true(regex.error[0].indexOf('regular expression: /^\\.wow$/') !== -1)
+})

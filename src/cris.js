@@ -69,6 +69,12 @@ export default class Cris {
     }
     return this
   }
+  regex(regex) {
+    if (!regex.test(this.value)) {
+      this.error = pushError(this.error, `Expected to match regular expression: ${regex.toString()}`)
+    }
+    return this
+  }
 }
 
 function isEmpty(value) {
